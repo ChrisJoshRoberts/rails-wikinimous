@@ -2,12 +2,13 @@
   <h1 class="mt-5">Articles</h1>
   <ul class="list-group list-unstyled bg-light p-3 rounded" >
     <% @articles.each do |article| %>
-    <div class="d-flex justify-content-between align-items-center bg-white p-3 m-2">
-      <div>
-      <li class="text-primary text-decoration-none h3"><%= article.title %></li>
-      <p class="text-secondary"><%= article.content %></p>
-      </div>
-      <i class="fa-solid fa-arrow-right"></i>
+    <%= link_to article_path(article) %>
+      <div class="d-flex justify-content-between align-items-center bg-white p-3 m-2 rounded" id="shadow">
+        <div>
+          <li class="text-primary text-decoration-none h3"><%= article.title %></li>
+          <p class="text-secondary"><%= article.content %></p>
+        </div>
+        <i class="fa-solid fa-arrow-right bg-light p-3 rounded-circle"></i>
     </div>
     <% end %>
   </ul>

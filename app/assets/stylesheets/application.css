@@ -30,3 +30,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.new_article {
+  margin: 32px;
+  color: rgb(10, 165, 200);
+}
+#shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
